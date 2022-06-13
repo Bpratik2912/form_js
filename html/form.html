@@ -9,16 +9,27 @@
       <hr><br>
           <!--input type="submit" value="Submit"-->
       <div>
-       <h2>Full name<span style="color: red ;">*</span></h2>
-        <input type="text1" id="fname" name="fname" value="">
-         <p id="OP1"></p>
-      <label for="fname" style="float: left; padding-right:445px ;">First name</label>
+        <div class="row">
+          <div class="col">
+            <h2>Full name<span style="color: red ;">*</span></h2>
+              <input type="text1" id="fname" name="fname" value="">
+               <p id="OP1"></p>
+               <label for="fname" style="float: left; padding-right:445px ;">First name</label>
+              </div>
+             
+            <div class="col"><input type="text2" id="lname" name="lname" value=""><br>
+              <p id="OP2"></p>
+              <lable for="lname">Last name</lable>
+            </div>
+            
       </div>
-      <div>
-      <input type="text2" id="lname" name="lname" value=""><br>
-      <p id="OP2"></p>
-      <lable for="lname">Last name</lable>
+      
       </div>
+
+
+
+
+
       <div>
       <h2>Address <span style="color: red ;">*</span></h2>
       <input type="text3" id="Address1" name="Address1">
@@ -45,7 +56,7 @@
       <p id="OP13"></p><br>
       <label for="phonenumber"></label>
       <h2>E-mail</h2>
-      <input type="email"id="email"name="email" placeholder="ex: email@yahoo.com">
+      <input type="email" id="email" name="email" placeholder="ex: email@yahoo.com">
       <p id="OP8"></p>
       <label for="email"></label><br>
       <label for="email">email@yahoo.com</email></label><br>
@@ -75,15 +86,16 @@
         
       <form>
         
-        <label type="gender" id="gender">Gender:</label>
-        <input type="radio" id="male" name="fav_language" value="">
-        <label for="male">male</label>
-        <input type="radio" id="female" name="fav_language" value="">
+        <label>Gender:</label>
+        <input type="radio" id="gender" name="fav_language" value="">
+        <label for="male" >male</label>
+        <input type="radio" id="gender" name="fav_language" value="">
         <label for="female">female</label>
-        <input type="radio" id="others" name="fav_language" value="">
+        <input type="radio" id="gender" name="fav_language" value="">
         <label for="others">others</label>
-        <p id="OP12"></p>
+        
       </form>
+      <p id="OP12"></p><br>
       <h2>Please give reference of any people whom :</h2>
       <table style="width: 90%";>
         <tr>
