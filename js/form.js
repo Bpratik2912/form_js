@@ -44,14 +44,15 @@ if(city.value==""){
   text= 'enter city'
   document.getElementById("OP5").innerHTML = text;
 }
-if(Postal.value==""){
+if(state.value==""){
   let text;
-  text= 'enter postal number'
+  text= 'enter state'
   document.getElementById("OP6").innerHTML = text;
 }
-if(phonenumber.value==""){
+
+if(Postal.value==""){
   let text;
-  text= 'enter  phone number'
+  text= 'enter  pincode'
   document.getElementById("OP7").innerHTML = text;
 }
 if(email.value==""){
@@ -79,5 +80,16 @@ if(gender.value==""){
   text= 'choose option'
   document.getElementById("OP12").innerHTML = text;
 }
+
+function printerror(elementid ,hintmsg){
+  document.getElementById(elementid).innerHTML= hintmsg;
+}
+let pattern= "\(([0-9]{3})\)?[-, ]?([0-9]{4})[-, ]?([0-9]{3})$"
+if(!phonenumber.value.match(pattern)){
+  let text;
+  text= 'enter  phone number'
+  document.getElementById("OP13").innerHTML = text;
+}
+
 
 }
